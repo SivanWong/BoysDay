@@ -1,0 +1,134 @@
+/* 
+* @Author: anchen
+* @Date:   2017-11-09 09:18:45
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-11-09 20:40:08
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+   
+}
+input {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+}
+textarea {
+    -webkit-appearance: none;
+}
+.wrap{
+    width: 100%;
+    height: 100%;
+   background: #ffe;
+    /* font-size:12px; */
+    overflow: auto;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.question-box{
+    width: 8.0rem;
+    height: 10.0rem;
+    
+    position: relative;
+      overflow: hidden;
+}
+.questions{
+    width: 72rem;
+    height: 8rem;
+    
+    position: absolute;
+    bottom: 0;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+.item{
+    width: 90%;
+    height: 80%;
+    /* background: url(../images/bg2.png) no-repeat center center ;
+    background-size: 100% 100%; */
+    float: left;
+}
+.item p{
+    font-size: 0.5rem;
+    color: #666666;
+    margin-bottom: 0.3rem;
+    margin-top:1.4rem;
+    font-weight: bolder;
+}
+.item span{
+    font-size: 0.4rem;
+}
+.item input{
+     height: 0.8rem;
+    width: 99%;
+    border-radius: 0.133333rem;
+    border: 0.03rem solid rgb(178, 178, 178);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+    padding: 0.013333rem;
+    background: transparent;
+    text-indent: 0.2rem;
+    margin: 0.2rem 0 0.266rem 0;
+    font-size: 0.346667rem;
+    color: #333333;
+}
+.item-Q{
+   width:7.4rem;
+ height: 3rem;
+  margin:0 auto;
+  /* height: 6rem; */
+ /*  background: pink; */
+   
+}
+.item button{
+    margin-top:1.4rem;
+    float: right;
+    margin-right: 0.8rem;
+    width: 30%;
+    font-size: 0.5rem;
+}
+.question-box h1{
+    font-size: 0.9rem;
+    text-align: center;
+    font-family: Vladimir Script;
+    color: rgb(229,32,47);
+    font-weight: bolder;
+
+}
+.heart{
+    width: 0.5rem;
+    height:0.5rem;
+    display: inline-block;
+    float: left;
+    /* display: inline-block;
+    background: url(../images/heart-icon.png) */
+}
+.item-Q span{
+    display: none;
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
